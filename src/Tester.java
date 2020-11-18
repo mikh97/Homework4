@@ -3,12 +3,15 @@ import java.util.ArrayList;
 public class Tester {
     public static void main(String[] args) {
         ArrayList<Utils> list = new ArrayList<>();
-        list.add(new Pair(2));
+        list.add(new Pair(12));
         list.add(new Pair(21));
-        list.add(new Pair(8));
+        list.add(new Pair(44));
+        list.add(new Pair(62));
+        list.add(new Pair(124));
+        list.add(new Pair(83));
 
-        System.out.println(min(list));
-        System.out.println(max(list));
+        System.out.println("Min: " + min(list));
+        System.out.println("Max: " + max(list));
     }
 
     public static <E extends Comparable<E>> E min(ArrayList<E> objects) {
@@ -29,6 +32,5 @@ public class Tester {
                 largest = obj;
             }
         } return largest;
-
     }
 }

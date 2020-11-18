@@ -12,8 +12,6 @@ public class Utils implements Comparable<Utils>{
 
     @Override
     public String toString() {
-        return "Minimum Value is " + objects;
+        return "Value is " + objects;
     }
-
-
 }
